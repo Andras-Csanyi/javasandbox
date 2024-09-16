@@ -1,0 +1,14 @@
+type Query {
+    getWhatever(input: WhateverInput): [Header]
+}
+
+input WhateverInput{
+    id: ID
+    name: String
+}
+
+type Header {
+    id: ID
+    name: String
+    value: String
+}
